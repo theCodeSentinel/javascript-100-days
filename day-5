@@ -1,0 +1,5 @@
+//string concatenation
+var message = "Hello";
+var myName = "Code sentinel";
+//Now concatenate
+alert(message + " " + myName);
