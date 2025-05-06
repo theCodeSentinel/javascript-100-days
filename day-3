@@ -1,0 +1,10 @@
+//variables
+
+//using the prompt() statement would ask the user for input which is lost immediately after input
+prompt("What's your name?");
+
+//Here is where variables becomes handy
+var myName = "Code Sentinel";
+var yourName = prompt("What's your name?");
+alert("Hello there " + yourName + ", my name is " + myName);
+//This stores input data by user into the variable called yourName and sends out a greeting message.
