@@ -1,0 +1,18 @@
+//Javascript variables exercise
+//there to variables with each owning a unique data, switch the value around between the variables
+function test(){
+var a = "3";
+var b = "8";
+/*Rules:
+1. Don't change the code above your specified area of code
+2. Don't change the code below your specified area of code
+3. You're not allowed to type any numbers
+4. You're not allowed to redeclare the var a and b.*/
+//write your code in the line 12, 13, 14
+var c = a;
+a = b;
+b = a;
+//Do not change the code below
+console.log("a is " + a);
+console.log("b is " + b);
+}
