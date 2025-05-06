@@ -1,0 +1,14 @@
+/*Learnt about data types
+Strings, NUmbers, Boolean*/
+
+//Strings (Texts) can be declared using the " or '
+alert("Hello World");
+//or
+alert('Hello World');
+
+/*Numbers, doesnt require any special symbol to be declared (The computer recognizes this) 
+as it has a different symbols as compared to string characters*/
+alert(1 + 2 + 3);
+
+/*Boolean are True or False statements that describes data that is either True or False*/
+typeof(true);

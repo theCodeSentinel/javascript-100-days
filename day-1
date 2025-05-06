@@ -1,3 +1,0 @@
-//created an alert using alert() keyword to send out a greeting message "Hello" "World"
-alert("hello");
-alert("World");
