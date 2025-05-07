@@ -1,0 +1,73 @@
+//Learnt about Functions and The karel Machine IDE for javascript and completed an exercise to create a chessboard-Like interface with it, below is my solution
+
+//This is function main(), here you can call other underlying functions, see it as the mother of all functions.
+function main(){
+   putBeeper();
+   topRightDiagPutBp();
+   topRightDiagPutBp();
+   topRightDiagPutBp();
+   topRightDiagPutBp();
+   turnAround();
+   move();
+   move();
+   move();
+   move();
+   putBeeper();
+   turnLeft();
+   topLeftDiagPutBp();
+   topLeftDiagPutBp();
+   topLeftDiagPutBp();
+   topLeftDiagPutBp();
+   horizontalMiddlePutBp();
+   middleVerticalPutBp();
+}
+
+//This functions is the first child function, deals with the right diagonal part of the job
+function topRightDiagPutBp(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+}
+
+//This is the 2nd part, deals with the left diagonal.
+function topLeftDiagPutBp(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+}
+
+//This fills the middle part while picking up the extra beep while right and left diagonal crossed each other.
+function horizontalMiddlePutBp(){
+     turnAround();
+   move();
+   move();
+   putBeeper();
+   turnLeft();
+   move();
+   move();
+   pickBeeper();
+   move();
+   move();
+   putBeeper();
+}
+
+//This completes the chessboard and is the last two beeps.
+function middleVerticalPutBp(){
+    turnLeft();
+   move();
+   move();
+   turnLeft();
+   move();
+   move();
+   putBeeper();
+   turnLeft();
+   move();
+   move();
+   move();
+   move();
+   putBeeper();
+}
