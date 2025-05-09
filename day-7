@@ -1,0 +1,9 @@
+//Functions with parameters and arguments
+
+/*Using function parameters Create a function that gets you bottles of milk you specified 
+and calculates the total amount of bottle of milk purchased based on the money allocated from the getMilk() input and round down incase there is a decimal number*/
+function getMilk(money){
+    var cost = 1.5;
+    console.log("You gave me $" + money + " and i got " + Math.floor(money / cost) + " Bottles");
+}
+getMilk(5);
