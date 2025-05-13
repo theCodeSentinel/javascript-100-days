@@ -1,0 +1,24 @@
+//JavaScript Function Outputs and Return Values
+
+// Function to calculate the number of milk bottles based on money given and cost per bottle
+
+function calculateBottles(money, costPerBottle) {
+    return Math.floor(money / costPerBottle);
+}
+
+// Function to calculate the change after buying bottles of milk
+
+function calcChange(money, costPerBottle) {
+    return money % costPerBottle;
+}
+
+// Main function to handle milk purchase and calculate change
+
+function getMilk(money, costPerBottle) {
+    console.log("You bought " + calculateBottles(money, costPerBottle) + " bottles of milk");
+    console.log("Your change is $" + calcChange(money, costPerBottle));
+}
+
+// Test the function with $5 and $1.5 per bottle
+
+getMilk(5, 1.5);
