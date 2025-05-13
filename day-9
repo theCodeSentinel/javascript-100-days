@@ -1,0 +1,12 @@
+//BMI Calculator Challenge
+
+//Function to calculate BMI
+
+function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return bmi;
+}
+
+// Testing the BMI calculator function
+var bmi = bmiCalculator(65, 1.8);
+console.log("Your BMI is: " + bmi.toFixed(2));
