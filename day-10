@@ -1,0 +1,26 @@
+// Pseudorandom number generator
+var n = Math.random();
+n = n * 6;
+console.log(Math.floor(n));
+
+// Love calculator, takes user input, ignores the input, generates random numbers which then is sent out to the user in percentage as an alert.
+prompt("Input the Male name");
+prompt("Input the Female name");
+var n = Math.random() * 100;
+n = Math.floor(n) + 1;
+
+// Control flow/statements using ifElse conditionals and logic
+// Use if else conditions to compliment users who get a score above 70 and leave the normal for the ones below 70
+if (n > 70) {
+    alert("Your love percentage is: " + n + "%" + ", your love is extraordinary.");
+} else {
+    alert("Your love percentage is: " + n + "%");
+}
+
+// Comparators and equalities
+// === is equal to
+// !== is not equal to
+// > is greater than
+// < is lesser than
+// >= is greater than equal
+// <= is lesser than equal
