@@ -1,0 +1,26 @@
+/*I completed a leap year challenge, by creating a program that tells the user which year is and isn't a leap year.
+To do this, some conditions were laid:
+If the year given is divisble by 4 then it is a leap year but if not, it isn't.
+If that same year is divisible by 100 then it is not a leap year and if not, then it is.
+If that same year is divisible by 400 then it infact is a leap year and if not, it isn't.
+
+Create a leap year calculator
+Create a function called isLeap with an input year*/
+function isLeap(year){
+//create an if - else statement checking that each conditions are met with their appropriate reurn value
+    if (year % 4 ===0 ) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+               return(" is a leap year.");
+            } else {
+                return(" is not a leap year.");
+            }
+        } else {
+            return(" is a leap year.");
+        }
+    } else {
+       return(" is not a leap year.");
+    }
+}
+//call the fucntion isLeap with your preferred parameter like for example the year i set.
+isLeap(2025);
